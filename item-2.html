@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles-item2.css" />
+    <script defer src="./assets/js/item-2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-productos">
+        <p>Puedes llevar hasta 10 stickers en total</p>
+        <div class="stickers">
+          <div class="container-input">
+            <img
+              src="./assets/img/download-full-hd-graffiti-sticker-png-free-75673.png"
+              alt=""
+            />
+            <input id="sticker-1" type="text" />
+          </div>
+          <div class="container-input">
+            <img
+              src="./assets/img/e5f0de6f7d0762cd08725ea9dfd7c487.png"
+              alt=""
+            />
+            <input id="sticker-2" type="text" />
+          </div>
+          <div class="container-input">
+            <img
+              src="./assets/img/pngtree-cute-cat-sticker-cartoon-kitten-kitty-png-image_6635286.png"
+              alt=""
+            />
+            <input id="sticker-3" type="text" />
+          </div>
+        </div>
+        <div class="resultado">
+          <p id="texto"></p>
+          <button
+            onclick="
+            primerSticker = document.querySelector('#sticker-1').value
+            segundoSticker = document.querySelector('#sticker-2').value
+            tercerSticker = document.querySelector('#sticker-3').value
+            parrafo = document.querySelector('#texto')
+
+            sumaStickers = Number(primerSticker) + Number(segundoSticker) + Number(tercerSticker)
+            
+            if (sumaStickers > 10){
+                parrafo.innerHTML = 'Llevas demasiados stickers'
+            } else if (sumaStickers <= 10){
+                parrafo.innerHTML = 'Llevas '+ sumaStickers + ' stickers'
+            }
+
+
+
+          
+            "
+          >
+            COMPRAR
+          </button>
+        </div>
+      </div>
+      <div class="botones">
+        <a href="./index.html"><button>Anterior</button></a>
+        <a href="./item-3.html"><button>Siguiente</button></a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-gato{
+    background-color: rgb(9, 115, 160);
+    margin: 2rem;
+    padding: 5rem;
+    width: 50rem;
+    border-radius: 5px;
+}
+
+.imagen-borde{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+}
+
+button{
+    margin: 2rem;
+}
+
+button:hover{
+    cursor: pointer;
+}

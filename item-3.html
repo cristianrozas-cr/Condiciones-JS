@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/styles-item3.css" />
+    <script defer src="./assets/js/item-3.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-datos">
+        <h3>Ingresa tu contraseña</h3>
+        <div class="contraseña">
+          <select id="digito1">
+            <option value="-" selected>-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <!-- Opciones del 1 al 9 -->
+          </select>
+          <select id="digito2">
+            <option value="-" selected>-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <!-- Opciones del 1 al 9 -->
+          </select>
+          <select id="digito3">
+            <option value="-" selected>-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <!-- Opciones del 1 al 9 -->
+          </select>
+        </div>
+        <div class="resultado">
+          <button
+            id="ingresar"
+            onclick="
+            let primerDigito = document.querySelector('#digito1').value;
+            let segundoDigito = document.querySelector('#digito2').value;
+            let tercerDigito = document.querySelector('#digito3').value;
+            let texto = document.querySelector('#resultado');
+
+            let password = primerDigito+segundoDigito+tercerDigito
+            console.log(password)
+
+            if(password == '911'){
+                texto.innerHTML = 'Password 1 Correcto'
+            } else if (password == '714'){
+                texto.innerHTML = 'Password 2 Correcto'
+            } else {
+                texto.innerHTML = 'Password incorrecto'
+            }
+            "
+          >
+            <strong>INGRESAR</strong>
+          </button>
+          <p id="resultado"></p>
+        </div>
+      </div>
+      <div class="botones">
+        <a href="./item-2.html"><button>Anterior</button></a>
+      </div>
+    </div>
+  </body>
+</html>

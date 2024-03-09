@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Item-1</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <script defer src="./assets/js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-gato">
+        <div class="imagen-borde">
+          <img
+            id="gatito"
+            src="./assets/img/cedric-vt-IuJc2qh2TcA-unsplash.jpg"
+            alt=""
+            onclick="
+        imagen = document.querySelector('#gatito');
+        if (bordes === false){
+          imagen.style.border = '2px solid red';
+          bordes = true;
+        } else {
+          imagen.style.border = 'none'
+          bordes = false;
+        }
+        "
+          />
+        </div>
+      </div>
+      <div class="botones">
+        <a href="./item-2.html"><button>Siguiente</button></a>
+      </div>
+    </div>
+  </body>
+</html>
