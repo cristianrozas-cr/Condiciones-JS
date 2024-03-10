@@ -3,14 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
+    margin: 2rem;
 }
 
 
 .container-productos{
     background-color: rgb(9, 115, 160);
-    padding: 2rem;
     border-radius: 5px;
+    padding: 1rem;
 }
 
 
@@ -25,11 +25,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
+    margin: 1rem;
 }
 
 input{
-    margin: 2rem;
+    margin: 1rem;
     width: 80px;
     border: none;
     border-radius: 3px;
@@ -70,7 +70,7 @@ p{
     margin: 1rem;
 }
 .botones button{
-    margin: 2rem;
+    margin: 1rem;
 
 }
 button:hover{
